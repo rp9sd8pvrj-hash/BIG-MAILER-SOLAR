@@ -1,0 +1,372 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8f6;
+    color: #17221b;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header {
+    background: #071b11;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4c400;
+}
+
+
+/* HERO */
+
+#home {
+    min-height: 600px;
+    padding: 100px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+#home h2 {
+    max-width: 750px;
+    font-size: 38px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 600px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* BUTTONS */
+
+button {
+    background: #f4c400;
+    color: #111;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* SECTIONS */
+
+#services,
+#projects,
+#about,
+#quote,
+#contact {
+    padding: 70px 25px;
+    text-align: center;
+}
+
+#services {
+    background: #f5f8f6;
+}
+
+#projects {
+    background: white;
+}
+
+#about {
+    background: #f5f8f6;
+}
+
+#quote {
+    background: white;
+}
+
+#contact {
+    background: #071b11;
+    color: white;
+}
+
+
+/* HEADINGS */
+
+#services h2,
+#projects h2,
+#about h2,
+#quote h2,
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+/* SERVICES */
+
+.section-intro {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 17px;
+}
+
+.services-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 15px;
+}
+
+
+/* PROJECTS */
+
+.project-card {
+    max-width: 650px;
+    margin: 25px auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.project-card p {
+    padding: 10px 25px 25px;
+    font-size: 16px;
+}
+
+
+/* ABOUT */
+
+#about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 17px;
+}
+
+
+/* QUOTE FORM */
+
+#quote > p {
+    margin-bottom: 25px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    border: 1px solid #d6ddd8;
+    border-radius: 10px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    background: #f8faf9;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #f4c400;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+}
+
+
+/* CONTACT */
+
+#contact p {
+    max-width: 600px;
+    margin: 0 auto 15px;
+    font-size: 17px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #030d08;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    #home {
+        min-height: 550px;
+        padding: 80px 20px;
+    }
+
+    #home h2 {
+        font-size: 32px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    #services h2,
+    #projects h2,
+    #about h2,
+    #quote h2,
+    #contact h2 {
+        font-size: 28px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+    }
+
+    .project-card img {
+        height: 220px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .project-card p {
+        font-size: 15px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+}
