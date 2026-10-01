@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BIG MAILER SOLAR ENERGY CONCEPT</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <h1>☀️ BIG MAILER SOLAR</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#quote">Quote</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section id="home">
+
+        <h2>
+            Reliable Solar Energy
+            For Your Home & Business
+        </h2>
+
+        <p>
+            Professional solar panel, inverter, battery
+            and CCTV installation you can depend on.
+        </p>
+
+        <button
+            onclick="window.open('https://wa.me/2349165049356', '_blank')">
+            💬 Get a Quote on WhatsApp
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section id="services">
+
+        <h2>Our Services</h2>
+
+        <p class="section-intro">
+            Professional solar energy solutions for homes,
+            offices and businesses.
+        </p>
+
+        <div class="services-container">
+
+            <div class="service-card">
+
+                <div class="service-icon">☀️</div>
+
+                <h3>
+                    Solar Panel Installation
+                </h3>
+
+                <p>
+                    Professional installation of solar panels
+                    for reliable and clean energy.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🔋</div>
+
+                <h3>
+                    Inverter & Battery
+                </h3>
+
+                <p>
+                    Installation and setup of inverter and
+                    battery systems for dependable power.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">📹</div>
+
+                <h3>
+                    Solar CCTV
+                </h3>
+
+                <p>
+                    Solar-powered CCTV installation for homes,
+                    shops and businesses.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">⚡</div>
+
+                <h3>
+                    Solar System Design
+                </h3>
+
+                <p>
+                    We design solar systems according to your
+                    power needs and budget.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🔧</div>
+
+                <h3>
+                    Maintenance & Repairs
+                </h3>
+
+                <p>
+                    Professional troubleshooting, maintenance
+                    and repairs for solar systems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
+    <section id="projects">
+
+        <h2>Our Recent Projects</h2>
+
+        <div class="project-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80"
+                alt="Solar panel installation">
+
+            <h3>
+                Solar Panel Installation
+            </h3>
+
+            <p>
+                Professional solar panel installation
+                for reliable power supply.
+            </p>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=800&q=80"
+                alt="Solar energy system">
+
+            <h3>
+                Solar Energy System
+            </h3>
+
+            <p>
+                Complete solar energy solutions for homes
+                and businesses.
+            </p>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1548337138-e87d889cc369?auto=format&fit=crop&w=800&q=80"
+                alt="Solar power system">
+
+            <h3>
+                Solar Power Solution
+            </h3>
+
+            <p>
+                Reliable renewable energy systems
+                professionally installed.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about">
+
+        <h2>About BIG MAILER</h2>
+
+        <p>
+            BIG MAILER SOLAR ENERGY CONCEPT provides reliable
+            solar energy solutions designed to give homes and
+            businesses dependable power.
+
+            We specialize in solar panel installation,
+            inverter and battery systems, solar CCTV,
+            system design, maintenance and repairs.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         QUOTE FORM
+    ========================== -->
+
+    <section id="quote">
+
+        <h2>Request a Quote</h2>
+
+        <p>
+            Tell us what you need and we'll get back to you.
+        </p>
+
+
+        <form onsubmit="sendQuote(event)">
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Your Name"
+                required>
+
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="Your Phone Number"
+                required>
+
+
+            <select id="service" required>
+
+                <option value="">
+                    Select a Service
+                </option>
+
+                <option value="Solar Panel Installation">
+                    Solar Panel Installation
+                </option>
+
+                <option value="Inverter Installation">
+                    Inverter Installation
+                </option>
+
+                <option value="Battery Installation">
+                    Battery Installation
+                </option>
+
+                <option value="Solar CCTV">
+                    Solar CCTV
+                </option>
+
+                <option value="Solar System Design">
+                    Solar System Design
+                </option>
+
+                <option value="Solar Maintenance">
+                    Solar Maintenance
+                </option>
+
+                <option value="Solar Repair">
+                    Solar Repair
+                </option>
+
+            </select>
+
+
+            <textarea
+                id="customerMessage"
+                placeholder="Tell us what you need..."
+                rows="5"
+                required></textarea>
+
+
+            <button type="submit">
+                📲 Send Quote Request
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact">
+
+        <h2>
+            Let's Power Your Space
+        </h2>
+
+        <p>
+            Ready to install solar or upgrade
+            your existing system?
+        </p>
+
+        <p>
+            📞 09165049356
+        </p>
+
+        <br>
+
+        <button
+            onclick="window.open('https://wa.me/2349165049356', '_blank')">
+            💬 WhatsApp Us
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 BIG MAILER SOLAR ENERGY CONCEPT
+        </p>
+
+        <p>
+            Reliable Power. Professional Installation.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        function sendQuote(event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document.getElementById("customerName").value;
+
+
+            const phone =
+                document.getElementById("customerPhone").value;
+
+
+            const service =
+                document.getElementById("service").value;
+
+
+            const message =
+                document.getElementById("customerMessage").value;
+
+
+            const whatsappMessage =
+                "Hello BIG MAILER SOLAR ENERGY CONCEPT.%0A%0A" +
+
+                "Name: " +
+                encodeURIComponent(name) +
+
+                "%0APhone: " +
+                encodeURIComponent(phone) +
+
+                "%0AService: " +
+                encodeURIComponent(service) +
+
+                "%0AMessage: " +
+                encodeURIComponent(message);
+
+
+            window.open(
+                "https://wa.me/2349165049356?text=" +
+                whatsappMessage,
+                "_blank"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
